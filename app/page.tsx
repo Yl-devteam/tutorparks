@@ -10,7 +10,10 @@ export default function Home() {
   return (
     <>
       <LandingHeader />
-      <main id="top" className="w-full min-h-[calc(100vh-20rem)] bg-canvas pt-20">
+      <main
+        id="top"
+        className="w-full min-h-[calc(100vh-20rem)] bg-canvas pt-20"
+      >
         <div className="flex w-full flex-col">
           <Hero />
           <Metrics />
@@ -39,7 +42,7 @@ function Hero() {
             <h1 className="max-w-2xl font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-6xl leading-[1.15]">
               Master Math, English &amp; Science with Expert{" "}
               <span className="text-primary italic underline decoration-secondary/60 underline-offset-8">
-                1-on-1 Online Mentors
+                1-on-1 Online Classes
               </span>
             </h1>
             <p className="mt-6 max-w-xl type-body-lg leading-relaxed text-ink-subtle">
@@ -73,7 +76,10 @@ function Hero() {
                 <span>100% Vetted Teachers</span>
               </div>
               <div className="flex items-center gap-2 rounded border border-border/80 bg-canvas px-3.5 py-1.5 type-label-sm text-ink-subtle shadow-sm">
-                <Icon name="calendar_clock" className="text-[16px] text-secondary" />
+                <Icon
+                  name="calendar_clock"
+                  className="text-[16px] text-secondary"
+                />
                 <span>Flexible Scheduling</span>
               </div>
             </div>
@@ -185,7 +191,10 @@ function Metrics() {
 
 function Subjects() {
   return (
-    <section className="w-full scroll-mt-20 bg-canvas py-20" id="subjects-section">
+    <section
+      className="w-full scroll-mt-20 bg-canvas py-20"
+      id="subjects-section"
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-xl">
@@ -234,9 +243,9 @@ function Subjects() {
                 </span>
               </div>
               <p className="mb-6 type-body-sm leading-relaxed text-ink-subtle">
-                Cultivate deep problem-solving intuition, step-by-step arithmetic
-                logic, and full confidence for classroom quizzes and standardized
-                exams.
+                Cultivate deep problem-solving intuition, step-by-step
+                arithmetic logic, and full confidence for classroom quizzes and
+                standardized exams.
               </p>
               <div className="mb-6 rounded-lg border border-border/50 bg-canvas-inset p-4">
                 <p className="mb-2.5 type-label-sm tracking-wider text-ink uppercase">
@@ -250,7 +259,10 @@ function Subjects() {
                     "Pre-Calculus, AP Calculus & Statistics",
                   ].map((topic) => (
                     <li key={topic} className="flex items-center gap-2">
-                      <Icon name="check_circle" className="text-[16px] text-primary" />
+                      <Icon
+                        name="check_circle"
+                        className="text-[16px] text-primary"
+                      />
                       {topic}
                     </li>
                   ))}
@@ -300,7 +312,10 @@ function Subjects() {
                     "Vocabulary, Grammar & AP Lit Prep",
                   ].map((topic) => (
                     <li key={topic} className="flex items-center gap-2">
-                      <Icon name="check_circle" className="text-[16px] text-primary" />
+                      <Icon
+                        name="check_circle"
+                        className="text-[16px] text-primary"
+                      />
                       {topic}
                     </li>
                   ))}
@@ -350,7 +365,10 @@ function Subjects() {
                     "Honors/AP Physics & STEM Prep",
                   ].map((topic) => (
                     <li key={topic} className="flex items-center gap-2">
-                      <Icon name="check_circle" className="text-[16px] text-primary" />
+                      <Icon
+                        name="check_circle"
+                        className="text-[16px] text-primary"
+                      />
                       {topic}
                     </li>
                   ))}
@@ -409,7 +427,10 @@ function HowItWorks() {
               routine.
             </p>
             <div className="mt-6 flex items-center gap-2 rounded border border-border/50 bg-canvas-raised p-3 type-body-sm text-ink-subtle">
-              <Icon name="event_available" className="text-[18px] text-primary" />
+              <Icon
+                name="event_available"
+                className="text-[18px] text-primary"
+              />
               <span>Zero obligation • Instant setup</span>
             </div>
           </div>
@@ -422,8 +443,8 @@ function HowItWorks() {
             </h3>
             <p className="type-body-sm leading-relaxed text-ink-subtle">
               Experience a live, interactive 1-on-1 session on our digital
-              whiteboard. Your mentor assesses core skills and provides a written
-              baseline diagnostic.
+              whiteboard. Your mentor assesses core skills and provides a
+              written baseline diagnostic.
             </p>
             <div className="mt-6 flex items-center gap-2 rounded border border-border/50 bg-canvas-raised p-3 type-body-sm text-ink-subtle">
               <Icon name="assessment" className="text-[18px] text-primary" />
@@ -541,7 +562,9 @@ function Reviews() {
                 <Icon name="star" filled className="text-[18px]" />
                 <Icon name="star" filled className="text-[18px]" />
               </div>
-              <span className="type-label-lg text-ink">4.9 Overall Parent Score</span>
+              <span className="type-label-lg text-ink">
+                4.9 Overall Parent Score
+              </span>
             </div>
           </div>
         </div>
@@ -556,9 +579,10 @@ function Reviews() {
                 <Icon name="star" filled className="text-[18px]" />
               </div>
               <p className="font-display type-body-sm italic leading-relaxed text-ink">
-                &ldquo;Lucas was falling behind in Pre-Algebra and feeling anxious
-                before tests. Within 8 weeks with his TutorParks tutor, his test
-                score jumped from 68% to 92%. He actually enjoys math now!&rdquo;
+                &ldquo;Lucas was falling behind in Pre-Algebra and feeling
+                anxious before tests. Within 8 weeks with his TutorParks tutor,
+                his test score jumped from 68% to 92%. He actually enjoys math
+                now!&rdquo;
               </p>
             </div>
             <div className="mt-6 flex items-center gap-3 rounded-lg border-t border-rule/40 bg-canvas-raised/50 p-3 pt-6">
@@ -586,9 +610,10 @@ function Reviews() {
                 <Icon name="star" filled className="text-[18px]" />
               </div>
               <p className="font-display type-body-sm italic leading-relaxed text-ink">
-                &ldquo;The quality of tutors is exceptional. They don’t just give
-                answers; they teach foundational principles and test strategy for
-                AP Chemistry &amp; Physics. Outstanding platform!&rdquo;
+                &ldquo;The quality of tutors is exceptional. They don’t just
+                give answers; they teach foundational principles and test
+                strategy for AP Chemistry &amp; Physics. Outstanding
+                platform!&rdquo;
               </p>
             </div>
             <div className="mt-6 flex items-center gap-3 rounded-lg border-t border-rule/40 bg-canvas-raised/50 p-3 pt-6">
@@ -616,9 +641,9 @@ function Reviews() {
                 <Icon name="star" filled className="text-[18px]" />
               </div>
               <p className="font-display type-body-sm italic leading-relaxed text-ink">
-                &ldquo;My daughter was struggling with reading fluency. Her tutor
-                made every 45-minute lesson feel like a fun game. Her teacher
-                remarked on her remarkable vocabulary jump!&rdquo;
+                &ldquo;My daughter was struggling with reading fluency. Her
+                tutor made every 45-minute lesson feel like a fun game. Her
+                teacher remarked on her remarkable vocabulary jump!&rdquo;
               </p>
             </div>
             <div className="mt-6 flex items-center gap-3 rounded-lg border-t border-rule/40 bg-canvas-raised/50 p-3 pt-6">
@@ -651,7 +676,10 @@ function TeachWithUs() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="mx-auto mb-16 max-w-3xl text-center">
           <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-border/80 bg-canvas-inset px-3.5 py-1.5 type-label-sm font-bold tracking-wider text-primary uppercase">
-            <Icon name="workspace_premium" className="text-[16px] text-secondary" />
+            <Icon
+              name="workspace_premium"
+              className="text-[16px] text-secondary"
+            />
             <span>For Passionate Educators</span>
           </div>
           <h2 className="font-display text-3xl font-semibold text-ink lg:text-4xl">
@@ -659,8 +687,8 @@ function TeachWithUs() {
           </h2>
           <p className="mt-3 type-body-md leading-relaxed text-ink-subtle">
             Inspire young minds in Math, English, and Science. Enjoy competitive
-            pay ($35-$65/hr), flexible hours, curated curricula, and a supportive
-            educator community.
+            pay ($35-$65/hr), flexible hours, curated curricula, and a
+            supportive educator community.
           </p>
         </div>
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
@@ -720,8 +748,8 @@ function TeachWithUs() {
                 Teacher Application &amp; Onboarding
               </h3>
               <p className="mt-1 type-body-sm text-ink-subtle">
-                Complete the initial screening below to connect with our academic
-                hiring committee.
+                Complete the initial screening below to connect with our
+                academic hiring committee.
               </p>
             </div>
             <TeacherForm />
@@ -862,8 +890,8 @@ function Contact() {
               Send a Quick Message
             </h3>
             <p className="mb-6 type-body-sm text-ink-subtle">
-              Leave your contact details and our curriculum specialist will reach
-              out with tailor-made options.
+              Leave your contact details and our curriculum specialist will
+              reach out with tailor-made options.
             </p>
             <ContactForm />
           </div>
