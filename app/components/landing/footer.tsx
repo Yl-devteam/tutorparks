@@ -49,8 +49,8 @@ export async function LandingFooter() {
               </span>
             </div>
             <p className="type-body-sm leading-relaxed text-on-primary/70">
-              Empowering K-12 students to excel in English, Math, and Science
-              through personalized 1-on-1 and small group live online classes.
+              Live 1:1 online classes for K-12 in Maths, English, Science, and
+              languages — for families across UAE and the GCC.
             </p>
           </div>
           <div className="flex flex-col items-center gap-10 sm:flex-row sm:items-start sm:gap-16">
@@ -103,7 +103,7 @@ export async function LandingFooter() {
           </div>
         </div>
         <div className="mt-12 border-t border-primary pt-6 type-body-sm text-on-primary/70">
-          <p>© {year} TutorParks Inc. All rights reserved.</p>
+          <p>© {year} TutorParks. All rights reserved.</p>
         </div>
       </div>
     </footer>

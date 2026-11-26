@@ -38,7 +38,7 @@ export function TeacherForm() {
           </label>
           <input
             className="field-input"
-            placeholder="e.g. Dr. Arthur Miller"
+            placeholder="e.g. Dr. Aisha Rahman"
             required
             type="text"
           />
@@ -49,7 +49,7 @@ export function TeacherForm() {
           </label>
           <input
             className="field-input"
-            placeholder="arthur@example.com"
+            placeholder="you@example.com"
             required
             type="email"
           />
@@ -62,7 +62,7 @@ export function TeacherForm() {
           </label>
           <input
             className="field-input"
-            placeholder="(555) 234-5678"
+            placeholder="+971, +966, +974, +965, or +968"
             required
             type="tel"
           />
@@ -75,10 +75,12 @@ export function TeacherForm() {
             <option disabled value="">
               Select specialty subject...
             </option>
-            <option value="math">Mathematics (K-12 &amp; AP)</option>
-            <option value="english">English &amp; Literature</option>
-            <option value="science">Science &amp; STEM</option>
-            <option value="multi">Multi-Subject Educator</option>
+            <option value="maths">Maths (K-12)</option>
+            <option value="english">English</option>
+            <option value="science">Science</option>
+            <option value="languages">Languages</option>
+            <option value="social">EVS / Social Studies</option>
+            <option value="multi">Multi-subject</option>
           </select>
         </div>
       </div>
@@ -94,8 +96,10 @@ export function TeacherForm() {
             <option value="bachelor">Bachelor&apos;s Degree</option>
             <option value="master">Master&apos;s Degree (M.Ed / M.S. / M.A.)</option>
             <option value="phd">Ph.D. / Doctorate</option>
-            <option value="license">State Certified K-12 Teaching License</option>
-            <option value="ap">College Board AP Certified Specialist</option>
+            <option value="license">Teaching diploma / certified teacher</option>
+            <option value="boards">
+              CBSE / ICSE / IB / IGCSE teaching experience
+            </option>
           </select>
         </div>
         <div>
@@ -104,10 +108,10 @@ export function TeacherForm() {
           </label>
           <select className="field-input" required defaultValue="5-10">
             <option value="5-10">
-              5 – 10 hours / week (Part-time evening/weekend)
+              5 – 10 hours / week (part-time evenings)
             </option>
-            <option value="10-20">10 – 20 hours / week (Standard schedule)</option>
-            <option value="20+">20+ hours / week (High volume educator)</option>
+            <option value="10-20">10 – 20 hours / week</option>
+            <option value="20+">20+ hours / week</option>
           </select>
         </div>
       </div>
@@ -143,8 +147,8 @@ export function TeacherForm() {
         <Icon name="send" className="ml-2 text-[18px]" />
       </button>
       <p className="text-center type-body-sm text-ink-subtle">
-        Our educator vetting team reviews applications within 48 hours. Top 3%
-        acceptance rate ensures academic excellence.
+        Our team reviews applications within 48 hours and follows up for a
+        teaching demonstration.
       </p>
     </form>
   );

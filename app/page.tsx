@@ -39,48 +39,55 @@ function Hero() {
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-8 lg:px-12">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="flex flex-col items-start pr-0 lg:col-span-7 lg:pr-6">
+            <p className="mb-4 type-label-sm font-bold tracking-wider text-primary uppercase">
+              Learn · Grow · Brighter Tomorrow
+            </p>
             <h1 className="max-w-2xl font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-6xl leading-[1.15]">
-              Master Math, English &amp; Science with Expert{" "}
+              Personalized{" "}
               <span className="text-primary italic underline decoration-secondary/60 underline-offset-8">
-                1-on-1 Online Classes
-              </span>
+                1-on-1 online tutoring
+              </span>{" "}
+              for a brighter future
             </h1>
             <p className="mt-6 max-w-xl type-body-lg leading-relaxed text-ink-subtle">
-              Personalized interactive lessons for Grades K-12. Build rock-solid
-              foundational concepts, boost school grades, and spark lifelong
-              academic curiosity in a supportive environment.
+              Live K-12 classes in Maths, English, Science, languages, and more.
+              Trusted by families across the UAE, Saudi Arabia, Qatar, Kuwait,
+              and Oman.
+            </p>
+            <p className="mt-3 type-label-sm text-ink-subtle">
+              UAE · Saudi Arabia · Qatar · Kuwait · Oman
             </p>
             <div className="mt-8 flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center">
               <a className="btn-primary group" href="#demo-booking">
-                <span>Book Your 30-Min Free Demo</span>
+                <span>Book a free trial class</span>
                 <Icon
                   name="arrow_forward"
                   className="text-[18px] transition-transform group-hover:translate-x-1"
                 />
               </a>
               <a className="btn-outline text-center" href="#subjects-section">
-                Explore Subjects &amp; Curriculum
+                Explore subjects
               </a>
             </div>
-            <div className="mt-4 flex items-center gap-2 type-body-sm text-ink-subtle">
+            <div className="mt-4 flex flex-wrap items-center gap-2 type-body-sm text-ink-subtle">
               <Icon name="check_circle" className="text-[16px] text-primary" />
               <span>No credit card needed</span>
               <span className="text-rule">•</span>
-              <span>Instant calendar confirmation</span>
+              <span>Free trial class</span>
               <span className="text-rule">•</span>
-              <span>100% Free lesson</span>
+              <span>3 extra classes on enrollment</span>
             </div>
             <div className="mt-8 flex flex-wrap gap-2.5">
               <div className="flex items-center gap-2 rounded border border-border/80 bg-canvas px-3.5 py-1.5 type-label-sm text-ink-subtle shadow-sm">
                 <Icon name="school" className="text-[16px] text-primary" />
-                <span>100% Vetted Teachers</span>
+                <span>Experienced &amp; verified tutors</span>
               </div>
               <div className="flex items-center gap-2 rounded border border-border/80 bg-canvas px-3.5 py-1.5 type-label-sm text-ink-subtle shadow-sm">
                 <Icon
                   name="calendar_clock"
                   className="text-[16px] text-secondary"
                 />
-                <span>Flexible Scheduling</span>
+                <span>Flexible timings</span>
               </div>
             </div>
           </div>
@@ -104,7 +111,7 @@ function Hero() {
                   </div>
                   <div>
                     <p className="font-sans type-label-lg text-ink">
-                      1-on-1 Dedicated Classes
+                      1-on-1 live classes
                     </p>
                     <p className="mt-1 type-body-sm leading-tight text-ink-subtle">
                       Matched to your child&apos;s learning style.
@@ -117,10 +124,10 @@ function Hero() {
                   </div>
                   <div>
                     <p className="font-sans type-label-lg text-ink">
-                      Flexible Scheduling
+                      Flexible timings
                     </p>
                     <p className="mt-1 type-body-sm leading-tight text-ink-subtle">
-                      Sessions that fit the family calendar.
+                      Evening slots that fit families in the Gulf.
                     </p>
                   </div>
                 </div>
@@ -137,22 +144,19 @@ function Metrics() {
   return (
     <section className="w-full border-y border-rule/70 bg-canvas-raised py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col items-center p-4 md:items-start">
             <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-chip-emerald text-primary">
               <Icon name="event_available" className="text-[26px]" />
             </div>
-            <div className="flex items-baseline gap-1">
-              <span className="font-display text-4xl font-bold text-primary lg:text-5xl">
-                30
-              </span>
-              <span className="text-2xl font-bold text-primary">Min</span>
-            </div>
+            <p className="font-display text-2xl font-semibold text-ink lg:text-3xl">
+              Free trial
+            </p>
             <p className="mt-1 font-sans text-base font-bold text-ink">
-              Free Demo Session
+              Live class
             </p>
             <p className="type-body-sm text-ink-subtle">
-              No credit card. Baseline skill report included.
+              No credit card. Meet a tutor in a 1:1 session.
             </p>
           </div>
           <div className="flex flex-col items-center p-4 md:items-start">
@@ -163,10 +167,10 @@ function Metrics() {
               1-on-1
             </p>
             <p className="mt-1 font-sans text-base font-bold text-ink">
-              Dedicated Classes
+              Live classes
             </p>
             <p className="type-body-sm text-ink-subtle">
-              Live sessions with one matched mentor.
+              One matched tutor, one student.
             </p>
           </div>
           <div className="flex flex-col items-center p-4 md:items-start">
@@ -177,10 +181,24 @@ function Metrics() {
               Flexible
             </p>
             <p className="mt-1 font-sans text-base font-bold text-ink">
-              Scheduling
+              Timings
             </p>
             <p className="type-body-sm text-ink-subtle">
-              Times that fit the family week.
+              Evening and weekend slots for families in the Gulf.
+            </p>
+          </div>
+          <div className="flex flex-col items-center p-4 md:items-start">
+            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-chip-ochre text-chip-ochre-fg">
+              <Icon name="card_giftcard" className="text-[26px]" />
+            </div>
+            <p className="font-display text-2xl font-semibold text-ink lg:text-3xl">
+              3 extra
+            </p>
+            <p className="mt-1 font-sans text-base font-bold text-ink">
+              Classes on enrollment
+            </p>
+            <p className="type-body-sm text-ink-subtle">
+              Added when you enroll in a 24-session or any package.
             </p>
           </div>
         </div>
@@ -199,30 +217,28 @@ function Subjects() {
         <div className="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-xl">
             <div className="mb-3 inline-flex items-center gap-2 rounded bg-canvas-inset px-3 py-1 type-label-sm font-bold tracking-wider text-primary uppercase">
-              Academic Focus Areas
+              Subjects we teach
             </div>
             <h2 className="font-display text-3xl font-semibold text-ink lg:text-4xl">
-              Tailored Instruction Built for K-12 Mastery
+              K-12 classes matched to your board
             </h2>
             <p className="mt-3 type-body-md leading-relaxed text-ink-subtle">
-              Whether catching up on fundamental concepts or accelerating into
-              Advanced Placement tracks, our curricula match your school&apos;s
-              exact standards.
+              Catch-up, homework help, or exam prep — we follow the syllabus
+              your school actually uses, across grades K-5, 6-8, and 9-12.
             </p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className="type-label-sm tracking-wider text-ink-subtle uppercase">
-              Aligned with:
+              Boards:
             </span>
-            <span className="rounded border border-border bg-canvas px-3 py-1 type-label-sm text-ink shadow-sm">
-              Common Core
-            </span>
-            <span className="rounded border border-border bg-canvas px-3 py-1 type-label-sm text-ink shadow-sm">
-              NGSS
-            </span>
-            <span className="rounded border border-border bg-canvas px-3 py-1 type-label-sm text-ink shadow-sm">
-              AP / IB
-            </span>
+            {["CBSE", "ICSE", "IB", "IGCSE", "State Boards"].map((board) => (
+              <span
+                key={board}
+                className="rounded border border-border bg-canvas px-3 py-1 type-label-sm text-ink shadow-sm"
+              >
+                {board}
+              </span>
+            ))}
           </div>
         </div>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -235,28 +251,25 @@ function Subjects() {
                 <Icon name="calculate" className="text-[28px]" />
               </div>
               <div className="mb-2 flex items-center justify-between">
-                <h3 className="font-sans text-2xl font-bold text-ink">
-                  Mathematics
-                </h3>
+                <h3 className="font-sans text-2xl font-bold text-ink">Maths</h3>
                 <span className="rounded border border-border/60 bg-canvas-inset px-2.5 py-1 type-label-sm text-primary">
                   Grades K–12
                 </span>
               </div>
               <p className="mb-6 type-body-sm leading-relaxed text-ink-subtle">
-                Cultivate deep problem-solving intuition, step-by-step
-                arithmetic logic, and full confidence for classroom quizzes and
-                standardized exams.
+                Build number sense, step-by-step problem solving, and exam
+                confidence for school quizzes and board papers.
               </p>
               <div className="mb-6 rounded-lg border border-border/50 bg-canvas-inset p-4">
                 <p className="mb-2.5 type-label-sm tracking-wider text-ink uppercase">
-                  Curriculum Topics Covered
+                  Topics covered
                 </p>
                 <ul className="space-y-2 type-body-sm text-ink-subtle">
                   {[
-                    "Early Numeracy & Mental Math",
-                    "Pre-Algebra & Geometry Foundations",
-                    "Algebra I, II & Trigonometry",
-                    "Pre-Calculus, AP Calculus & Statistics",
+                    "Early numeracy & mental maths",
+                    "Fractions, algebra & geometry",
+                    "Trigonometry & higher secondary maths",
+                    "Board exam and test revision",
                   ].map((topic) => (
                     <li key={topic} className="flex items-center gap-2">
                       <Icon
@@ -271,13 +284,13 @@ function Subjects() {
             </div>
             <div className="flex flex-col gap-3 pt-4">
               <a className="btn-primary w-full" href="#demo-booking">
-                Book Math Free Demo
+                Book a Maths trial
               </a>
               <a
                 className="flex items-center justify-center gap-1 text-center type-body-sm font-semibold text-primary hover:text-primary-hover"
                 href="#contact-advisors"
               >
-                <span>View Math Syllabus &amp; Diagnostic Info</span>
+                <span>Ask about your Maths syllabus</span>
                 <Icon name="arrow_right_alt" className="text-[16px]" />
               </a>
             </div>
@@ -289,27 +302,26 @@ function Subjects() {
               </div>
               <div className="mb-2 flex items-center justify-between">
                 <h3 className="font-sans text-2xl font-bold text-ink">
-                  English Arts
+                  English
                 </h3>
                 <span className="rounded border border-chip-ochre bg-chip-ochre px-2.5 py-1 type-label-sm text-tertiary">
                   Grades K–12
                 </span>
               </div>
               <p className="mb-6 type-body-sm leading-relaxed text-ink-subtle">
-                Master confident verbal articulation, nuanced literary text
-                analysis, robust grammar mechanics, and persuasive essay
-                composition.
+                Reading, writing, grammar, and speaking — so students can
+                follow class, write clearly, and sit language papers with ease.
               </p>
               <div className="mb-6 rounded-lg border border-border/50 bg-canvas-inset p-4">
                 <p className="mb-2.5 type-label-sm tracking-wider text-ink uppercase">
-                  Curriculum Topics Covered
+                  Topics covered
                 </p>
                 <ul className="space-y-2 type-body-sm text-ink-subtle">
                   {[
-                    "Phonics & Early Reading Fluency",
-                    "Reading Comprehension & Critical Analysis",
-                    "Creative, Expository & Essay Writing",
-                    "Vocabulary, Grammar & AP Lit Prep",
+                    "Phonics & early reading",
+                    "Comprehension & literature",
+                    "Essay, creative & exam writing",
+                    "Grammar, vocabulary & speaking",
                   ].map((topic) => (
                     <li key={topic} className="flex items-center gap-2">
                       <Icon
@@ -324,13 +336,13 @@ function Subjects() {
             </div>
             <div className="flex flex-col gap-3 pt-4">
               <a className="btn-primary w-full" href="#demo-booking">
-                Book English Free Demo
+                Book an English trial
               </a>
               <a
                 className="flex items-center justify-center gap-1 text-center type-body-sm font-semibold text-primary hover:text-primary-hover"
                 href="#contact-advisors"
               >
-                <span>View English Syllabus &amp; Reading Lists</span>
+                <span>Ask about English support</span>
                 <Icon name="arrow_right_alt" className="text-[16px]" />
               </a>
             </div>
@@ -342,27 +354,26 @@ function Subjects() {
               </div>
               <div className="mb-2 flex items-center justify-between">
                 <h3 className="font-sans text-2xl font-bold text-ink">
-                  Science &amp; STEM
+                  Science
                 </h3>
                 <span className="rounded border border-chip-emerald bg-chip-emerald px-2.5 py-1 type-label-sm text-primary">
                   Grades K–12
                 </span>
               </div>
               <p className="mb-6 type-body-sm leading-relaxed text-ink-subtle">
-                Explore hands-on interactive simulations, develop
-                hypothesis-testing habits, and master chemistry equations and
-                physics theorems with ease.
+                Interactive lessons that make concepts stick — from primary
+                inquiry through biology, chemistry, and physics.
               </p>
               <div className="mb-6 rounded-lg border border-border/50 bg-canvas-inset p-4">
                 <p className="mb-2.5 type-label-sm tracking-wider text-ink uppercase">
-                  Curriculum Topics Covered
+                  Topics covered
                 </p>
                 <ul className="space-y-2 type-body-sm text-ink-subtle">
                   {[
-                    "Elementary Inquiry & Earth Science",
-                    "Middle School Life & Physical Science",
-                    "High School Biology & Chemistry",
-                    "Honors/AP Physics & STEM Prep",
+                    "EVS & primary science",
+                    "Life & physical science",
+                    "Biology, chemistry & physics",
+                    "Board and IB / IGCSE revision",
                   ].map((topic) => (
                     <li key={topic} className="flex items-center gap-2">
                       <Icon
@@ -377,16 +388,70 @@ function Subjects() {
             </div>
             <div className="flex flex-col gap-3 pt-4">
               <a className="btn-primary w-full" href="#demo-booking">
-                Book Science Free Demo
+                Book a Science trial
               </a>
               <a
                 className="flex items-center justify-center gap-1 text-center type-body-sm font-semibold text-primary hover:text-primary-hover"
                 href="#contact-advisors"
               >
-                <span>View Science Lab Modules &amp; Specs</span>
+                <span>Ask about Science support</span>
                 <Icon name="arrow_right_alt" className="text-[16px]" />
               </a>
             </div>
+          </article>
+        </div>
+        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <article className="flex flex-col rounded-lg border border-border-card bg-canvas-raised p-8 shadow-card">
+            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg border border-border/60 bg-canvas-inset text-primary">
+              <Icon name="translate" className="text-[28px]" />
+            </div>
+            <h3 className="font-sans text-2xl font-bold text-ink">Languages</h3>
+            <p className="mt-3 type-body-sm leading-relaxed text-ink-subtle">
+              French, Spanish, and other languages — conversation, school
+              coursework, and exam practice.
+            </p>
+            <a
+              className="mt-6 type-body-sm font-semibold text-primary hover:text-primary-hover"
+              href="#demo-booking"
+            >
+              Book a language trial
+            </a>
+          </article>
+          <article className="flex flex-col rounded-lg border border-border-card bg-canvas-raised p-8 shadow-card">
+            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg border border-chip-ochre bg-chip-ochre text-tertiary">
+              <Icon name="public" className="text-[28px]" />
+            </div>
+            <h3 className="font-sans text-2xl font-bold text-ink">
+              EVS &amp; Social Studies
+            </h3>
+            <p className="mt-3 type-body-sm leading-relaxed text-ink-subtle">
+              Environmental studies, history, geography, and civics aligned to
+              your school board.
+            </p>
+            <a
+              className="mt-6 type-body-sm font-semibold text-primary hover:text-primary-hover"
+              href="#demo-booking"
+            >
+              Book an EVS trial
+            </a>
+          </article>
+          <article className="flex flex-col rounded-lg border border-border-card bg-canvas-raised p-8 shadow-card">
+            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg border border-chip-emerald bg-chip-emerald text-primary">
+              <Icon name="menu_book" className="text-[28px]" />
+            </div>
+            <h3 className="font-sans text-2xl font-bold text-ink">
+              Homework &amp; exam prep
+            </h3>
+            <p className="mt-3 type-body-sm leading-relaxed text-ink-subtle">
+              Daily homework help plus focused revision for CBSE, ICSE, IB,
+              IGCSE, and state board exams.
+            </p>
+            <a
+              className="mt-6 type-body-sm font-semibold text-primary hover:text-primary-hover"
+              href="#demo-booking"
+            >
+              Book exam-prep trial
+            </a>
           </article>
         </div>
       </div>
@@ -403,71 +468,80 @@ function HowItWorks() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <span className="rounded bg-canvas-inset px-3 py-1 type-label-sm font-bold tracking-wider text-primary uppercase">
-            Frictionless Onboarding
+            How it works
           </span>
           <h2 className="mt-3 font-display text-3xl font-semibold text-ink lg:text-4xl">
-            How TutorParks Works in 3 Simple Steps
+            From a free trial to confident, independent learners
           </h2>
           <p className="mt-3 type-body-md leading-relaxed text-ink-subtle">
-            We combine human teaching empathy with rigorous tracking so parents
-            can step back while grades step up.
+            Five simple steps. Parents stay informed; students build skills in
+            live 1:1 classes.
           </p>
         </div>
-        <div className="relative grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div className="relative flex flex-col rounded-lg border border-border-card bg-canvas p-8 shadow-card">
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-lg border border-border/60 bg-canvas-raised font-display text-2xl font-bold text-primary">
-              01
+        <div className="relative grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-5">
+          {[
+            {
+              n: "01",
+              tone: "text-primary",
+              title: "Book a free trial",
+              body: "Share grade, subject, and a time that fits. No credit card.",
+              icon: "event_available",
+              note: "Zero obligation",
+            },
+            {
+              n: "02",
+              tone: "text-secondary",
+              title: "Meet your teacher",
+              body: "A live 1:1 class on the interactive board so you can see the fit.",
+              icon: "person",
+              note: "Interactive session",
+            },
+            {
+              n: "03",
+              tone: "text-tertiary",
+              title: "Get a personal plan",
+              body: "Lessons mapped to your board, goals, and weekly routine.",
+              icon: "edit_note",
+              note: "Personal plan",
+            },
+            {
+              n: "04",
+              tone: "text-primary",
+              title: "Regular classes",
+              body: "Weekly 1:1 sessions with homework help built in.",
+              icon: "school",
+              note: "Weekly 1:1",
+            },
+            {
+              n: "05",
+              tone: "text-secondary",
+              title: "Track progress",
+              body: "Parents get updates without sitting in on class.",
+              icon: "insights",
+              note: "Parent updates",
+            },
+          ].map((step) => (
+            <div
+              key={step.n}
+              className="relative flex flex-col rounded-lg border border-border-card bg-canvas p-6 shadow-card xl:p-6"
+            >
+              <div
+                className={`mb-6 flex h-14 w-14 items-center justify-center rounded-lg border border-border/60 bg-canvas-raised font-display text-2xl font-bold ${step.tone}`}
+              >
+                {step.n}
+              </div>
+              <h3 className="mb-3 font-sans text-xl font-bold text-ink">
+                {step.title}
+              </h3>
+              <p className="type-body-sm leading-relaxed text-ink-subtle">
+                {step.body}
+              </p>
+              <div className="mt-6 flex items-center gap-2 rounded border border-border/50 bg-canvas-raised p-3 type-body-sm text-ink-subtle">
+                <Icon name={step.icon} className="text-[18px] text-primary" />
+                <span>{step.note}</span>
+              </div>
             </div>
-            <h3 className="mb-3 font-sans text-xl font-bold text-ink">
-              Book a 30-Min Free Demo
-            </h3>
-            <p className="type-body-sm leading-relaxed text-ink-subtle">
-              Tell us your child’s grade, subject focus, and specific hurdles.
-              Pick a convenient time slot that fits seamlessly into your family
-              routine.
-            </p>
-            <div className="mt-6 flex items-center gap-2 rounded border border-border/50 bg-canvas-raised p-3 type-body-sm text-ink-subtle">
-              <Icon
-                name="event_available"
-                className="text-[18px] text-primary"
-              />
-              <span>Zero obligation • Instant setup</span>
-            </div>
-          </div>
-          <div className="relative flex flex-col rounded-lg border border-border-card bg-canvas p-8 shadow-card">
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-lg border border-border/60 bg-canvas-raised font-display text-2xl font-bold text-secondary">
-              02
-            </div>
-            <h3 className="mb-3 font-sans text-xl font-bold text-ink">
-              Meet Your Matched Expert Tutor
-            </h3>
-            <p className="type-body-sm leading-relaxed text-ink-subtle">
-              Experience a live, interactive 1-on-1 session on our digital
-              whiteboard. Your mentor assesses core skills and provides a
-              written baseline diagnostic.
-            </p>
-            <div className="mt-6 flex items-center gap-2 rounded border border-border/50 bg-canvas-raised p-3 type-body-sm text-ink-subtle">
-              <Icon name="assessment" className="text-[18px] text-primary" />
-              <span>Free Baseline Diagnostic Report</span>
-            </div>
-          </div>
-          <div className="relative flex flex-col rounded-lg border border-border-card bg-canvas p-8 shadow-card">
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-lg border border-border/60 bg-canvas-raised font-display text-2xl font-bold text-tertiary">
-              03
-            </div>
-            <h3 className="mb-3 font-sans text-xl font-bold text-ink">
-              Unlock Academic Growth
-            </h3>
-            <p className="type-body-sm leading-relaxed text-ink-subtle">
-              Choose your flexible weekly schedule. Follow a custom curriculum
-              roadmap with regular homework guidance and weekly parent progress
-              digests.
-            </p>
-            <div className="mt-6 flex items-center gap-2 rounded border border-border/50 bg-canvas-raised p-3 type-body-sm text-ink-subtle">
-              <Icon name="insights" className="text-[18px] text-primary" />
-              <span>Weekly Parent Reports &amp; Analytics</span>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -481,28 +555,32 @@ function DemoBooking() {
         <div className="grid grid-cols-1 items-center gap-12 p-0 lg:grid-cols-12 lg:rounded-xl lg:border lg:border-border-card lg:bg-canvas-raised lg:p-14 lg:shadow-card">
           <div className="flex flex-col lg:col-span-5">
             <span className="mb-4 self-start rounded border border-chip-ochre-fg/30 bg-chip-ochre px-3 py-1 type-label-sm text-chip-ochre-fg">
-              Zero-Risk Trial
+              Free trial class
             </span>
             <h2 className="font-display text-3xl font-semibold text-ink lg:text-4xl">
-              Schedule Your Free 30-Minute Trial Session
+              Book a free trial class
             </h2>
             <p className="mt-4 type-body-md leading-relaxed text-ink-subtle">
-              In this private 1-on-1 trial, your child works through a topic of
-              their choice with an experienced subject tutor.
+              A private 1:1 session with an experienced tutor. Enroll after the
+              trial and get 3 extra classes on any package.
             </p>
             <div className="mt-8 space-y-4">
               {[
                 {
-                  title: "Complimentary Baseline Diagnostic:",
-                  body: "Discover precise strengths and hidden curriculum gaps.",
+                  title: "Meet your teacher:",
+                  body: "See how a live interactive class feels before you commit.",
                 },
                 {
-                  title: "Custom Curriculum Roadmap:",
-                  body: "Tailored study plan aligned with your school district syllabus.",
+                  title: "Personalized learning plan:",
+                  body: "Mapped to your board — CBSE, ICSE, IB, IGCSE, or state.",
                 },
                 {
-                  title: "No Credit Card Required:",
-                  body: "100% free experience with no automatic subscription trap.",
+                  title: "3 extra classes on enrollment:",
+                  body: "Added when you join a 24-session or any package.",
+                },
+                {
+                  title: "No credit card required:",
+                  body: "The trial is free, with no automatic subscription.",
                 },
               ].map((item) => (
                 <div key={item.title} className="flex items-start gap-3">
@@ -517,13 +595,14 @@ function DemoBooking() {
             </div>
             <div className="mt-8 flex items-center gap-4 rounded-lg border border-border/60 bg-canvas-inset p-4">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary font-sans font-bold text-on-primary">
-                24h
+                +3
               </div>
               <div>
-                <p className="type-label-lg text-ink">Need a session today?</p>
+                <p className="type-label-lg text-ink">
+                  3 extra classes when you enroll
+                </p>
                 <p className="type-body-sm text-ink-subtle">
-                  Same-day appointments available for urgent homework or test
-                  prep.
+                  Complimentary classes added on a 24-session or any package.
                 </p>
               </div>
             </div>
@@ -547,25 +626,14 @@ function Reviews() {
         <div className="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
             <span className="rounded bg-canvas-inset px-3 py-1 type-label-sm font-bold tracking-wider text-primary uppercase">
-              Verified Family Reviews
+              Family stories
             </span>
             <h2 className="mt-3 font-display text-3xl font-semibold text-ink lg:text-4xl">
-              Loved by Over 3,000 Families Across the Country
+              Trusted by families across UAE and the GCC
             </h2>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-3 rounded-lg border border-border/80 bg-canvas px-4 py-2.5 shadow-sm">
-              <div className="flex text-secondary">
-                <Icon name="star" filled className="text-[18px]" />
-                <Icon name="star" filled className="text-[18px]" />
-                <Icon name="star" filled className="text-[18px]" />
-                <Icon name="star" filled className="text-[18px]" />
-                <Icon name="star" filled className="text-[18px]" />
-              </div>
-              <span className="type-label-lg text-ink">
-                4.9 Overall Parent Score
-              </span>
-            </div>
+            <p className="mt-2 type-body-sm text-ink-subtle">
+              UAE · Saudi Arabia · Qatar · Kuwait · Oman
+            </p>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -579,23 +647,22 @@ function Reviews() {
                 <Icon name="star" filled className="text-[18px]" />
               </div>
               <p className="font-display type-body-sm italic leading-relaxed text-ink">
-                &ldquo;Lucas was falling behind in Pre-Algebra and feeling
-                anxious before tests. Within 8 weeks with his TutorParks tutor,
-                his test score jumped from 68% to 92%. He actually enjoys math
-                now!&rdquo;
+                &ldquo;Our son was anxious about Maths before tests. His
+                TutorParks tutor made the lessons clear and calm. He now asks
+                for extra practice instead of putting it off.&rdquo;
               </p>
             </div>
             <div className="mt-6 flex items-center gap-3 rounded-lg border-t border-rule/40 bg-canvas-raised/50 p-3 pt-6">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-chip-emerald type-label-lg text-primary">
-                SJ
+                AM
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <p className="type-label-lg text-ink">Sarah Jenkins</p>
+                  <p className="type-label-lg text-ink">Amal Al-Mansoori</p>
                   <Icon name="verified" className="text-[16px] text-primary" />
                 </div>
                 <p className="type-body-sm text-ink-subtle">
-                  Parent of 7th Grader • Math Focus
+                  Parent of Grade 7 · Maths · UAE
                 </p>
               </div>
             </div>
@@ -610,23 +677,22 @@ function Reviews() {
                 <Icon name="star" filled className="text-[18px]" />
               </div>
               <p className="font-display type-body-sm italic leading-relaxed text-ink">
-                &ldquo;The quality of tutors is exceptional. They don’t just
-                give answers; they teach foundational principles and test
-                strategy for AP Chemistry &amp; Physics. Outstanding
-                platform!&rdquo;
+                &ldquo;The tutors explain IB Science properly instead of
+                rushing to answers. Evening slots work around our week in
+                Riyadh, and we get progress updates without sitting in.&rdquo;
               </p>
             </div>
             <div className="mt-6 flex items-center gap-3 rounded-lg border-t border-rule/40 bg-canvas-raised/50 p-3 pt-6">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-chip-ochre type-label-lg text-chip-ochre-fg">
-                DC
+                OH
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <p className="type-label-lg text-ink">Dr. David Chen</p>
+                  <p className="type-label-lg text-ink">Omar Al-Harbi</p>
                   <Icon name="verified" className="text-[16px] text-primary" />
                 </div>
                 <p className="type-body-sm text-ink-subtle">
-                  Parent of 10th &amp; 11th Graders • Science
+                  Parent of Grade 10 · Science · Saudi Arabia
                 </p>
               </div>
             </div>
@@ -641,22 +707,22 @@ function Reviews() {
                 <Icon name="star" filled className="text-[18px]" />
               </div>
               <p className="font-display type-body-sm italic leading-relaxed text-ink">
-                &ldquo;My daughter was struggling with reading fluency. Her
-                tutor made every 45-minute lesson feel like a fun game. Her
-                teacher remarked on her remarkable vocabulary jump!&rdquo;
+                &ldquo;Homework help and English together made a real
+                difference. When exams approached we switched to revision
+                without changing tutors.&rdquo;
               </p>
             </div>
             <div className="mt-6 flex items-center gap-3 rounded-lg border-t border-rule/40 bg-canvas-raised/50 p-3 pt-6">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-error-container type-label-lg text-tertiary">
-                MG
+                MN
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <p className="type-label-lg text-ink">Maria Gonzalez</p>
+                  <p className="type-label-lg text-ink">Meera Nair</p>
                   <Icon name="verified" className="text-[16px] text-primary" />
                 </div>
                 <p className="type-body-sm text-ink-subtle">
-                  Parent of 4th Grader • Reading &amp; ELA
+                  Parent of Grade 4 · English · Qatar
                 </p>
               </div>
             </div>
@@ -683,12 +749,12 @@ function TeachWithUs() {
             <span>For Passionate Educators</span>
           </div>
           <h2 className="font-display text-3xl font-semibold text-ink lg:text-4xl">
-            Join Our Network of Elite K-12 Mentors
+            Teach K-12 students across UAE and the GCC
           </h2>
           <p className="mt-3 type-body-md leading-relaxed text-ink-subtle">
-            Inspire young minds in Math, English, and Science. Enjoy competitive
-            pay ($35-$65/hr), flexible hours, curated curricula, and a
-            supportive educator community.
+            Inspire learners in Maths, English, Science, languages, and exam
+            boards. Competitive pay, flexible hours, and a supportive teaching
+            community.
           </p>
         </div>
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
@@ -697,26 +763,26 @@ function TeachWithUs() {
               {
                 icon: "payments",
                 tone: "bg-chip-ochre text-chip-ochre-fg",
-                title: "Top Tier Compensation",
-                body: "$35–$65/hr with direct bi-weekly deposits and performance bonuses for high student milestone achievements.",
+                title: "Competitive pay",
+                body: "Fair compensation with reliable payouts. Teach full-time or a few evening hours each week.",
               },
               {
                 icon: "auto_stories",
                 tone: "bg-canvas-inset text-primary",
-                title: "Curated Lesson Toolkits",
-                body: "Interactive STEM labs, digital whiteboard toolkits, and school-aligned lesson slides provided upfront—spend less time prepping.",
+                title: "Board-aligned lessons",
+                body: "Interactive whiteboard tools and lesson support for CBSE, ICSE, IB, IGCSE, and state boards — spend less time prepping.",
               },
               {
                 icon: "calendar_month",
                 tone: "bg-chip-emerald text-primary",
-                title: "Ultimate Flexibility",
-                body: "Teach remotely from home. Choose your availability between 5 to 30 hours per week with students matched to your optimal hours.",
+                title: "Flexible hours",
+                body: "Teach remotely. Choose your availability and we match students whose timings fit yours.",
               },
               {
                 icon: "groups",
                 tone: "bg-error-container text-tertiary",
-                title: "Community of Scholars",
-                body: "Collaborate with fellow state-certified K-12 educators, participate in pedagogical workshops, and receive mentoring feedback.",
+                title: "A teaching community",
+                body: "Work alongside experienced K-12 educators, share practice, and get mentoring feedback.",
               },
             ].map((item) => (
               <div
@@ -763,20 +829,24 @@ function TeachWithUs() {
 function Faq() {
   const items = [
     {
-      q: "What happens during the 30-minute free demo?",
-      a: "The demo is an actual live 1-on-1 mini-class. Your matched tutor will review a real topic or homework concept with your child on our collaborative digital board. During the last 5–10 minutes, the tutor connects with the parent to share their diagnostic assessment and recommend a personalized plan.",
+      q: "What happens during the free trial class?",
+      a: "The trial is a live 1:1 mini-class. Your matched tutor works through a real topic or homework item with your child on the interactive board. Near the end, the tutor speaks with the parent about what they noticed and a suggested learning plan.",
     },
     {
-      q: "How are your tutors selected and vetted?",
-      a: "We accept fewer than 3% of tutor applicants. Every tutor undergoes stringent background checks, academic degree verification from top universities, rigorous subject knowledge tests, and a live pedagogical teaching evaluation conducted by our senior curriculum board.",
+      q: "How are tutors selected?",
+      a: "Every tutor is background-checked, subject-tested, and evaluated in a live teaching session before they meet students.",
     },
     {
-      q: "Can we switch tutors or subjects if our needs change?",
-      a: "Yes, anytime. We provide 100% flexibility. If your child requires a different teaching style or wants to transition from Math to AP Biology or English writing before exam week, your dedicated academic coordinator will reassign or balance subject credits instantly without penalty.",
+      q: "Can we switch tutors, subjects, or boards?",
+      a: "Yes. If your child needs a different teaching style, or you want to move from Maths to Science, English, or another board (CBSE, ICSE, IB, IGCSE, or state) before exams, your coordinator will rematch without a penalty.",
     },
     {
-      q: "What technology or software do we need for classes?",
-      a: "No bulky downloads or complex setups are required. All you need is a laptop, desktop computer, or iPad/tablet with a working web camera, microphone, and stable internet connection. Our interactive whiteboard works directly in Google Chrome or Safari.",
+      q: "Do you teach students in more than one country?",
+      a: "Yes. We run live online classes for K-12 families across the UAE, Saudi Arabia, Qatar, Kuwait, and Oman. Timings are scheduled in Gulf time (GMT+3), which those countries share.",
+    },
+    {
+      q: "What technology do we need for classes?",
+      a: "A laptop, desktop, or tablet with a camera, microphone, and a stable internet connection. The interactive whiteboard runs in Chrome or Safari — no bulky downloads.",
     },
   ];
 
@@ -791,7 +861,7 @@ function Faq() {
             Frequently Asked Questions
           </h2>
           <p className="mt-2 type-body-sm leading-relaxed text-ink-subtle">
-            Everything you need to know about our demo process, tutor vetting,
+            Everything you need to know about the free trial, tutors, boards,
             and class format.
           </p>
         </div>
@@ -836,27 +906,11 @@ function Contact() {
                 Speak with Our Academic Advisors
               </h2>
               <p className="mt-4 type-body-sm leading-relaxed text-ink-subtle">
-                Have specific questions about state standards, gifted programs,
-                or IEP accommodations? Our academic guidance team is ready to
-                help you formulate the best pathway for your child.
+                Questions about boards, subjects, timings, or how a trial class
+                works? Our advisors help families across the UAE, Saudi Arabia,
+                Qatar, Kuwait, and Oman.
               </p>
               <div className="mt-8 space-y-4">
-                <a
-                  className="flex items-center gap-4 rounded-lg border border-border/60 bg-canvas-raised p-4 transition-colors hover:bg-canvas-inset"
-                  href="tel:8005550199"
-                >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-border bg-canvas text-primary">
-                    <Icon name="call" className="text-[24px]" />
-                  </div>
-                  <div>
-                    <p className="font-sans text-base font-bold text-ink">
-                      (800) 555-0199
-                    </p>
-                    <p className="type-body-sm text-ink-subtle">
-                      Mon – Fri, 8:00 AM – 8:00 PM EST (Toll-Free)
-                    </p>
-                  </div>
-                </a>
                 <a
                   className="flex items-center gap-4 rounded-lg border border-border/60 bg-canvas-raised p-4 transition-colors hover:bg-canvas-inset"
                   href="mailto:advisors@tutorparks.com"
@@ -869,7 +923,7 @@ function Contact() {
                       advisors@tutorparks.com
                     </p>
                     <p className="type-body-sm text-ink-subtle">
-                      Typical response within 2 hours
+                      Sun – Thu, 4:00 PM – 9:00 PM Gulf time (GMT+3)
                     </p>
                   </div>
                 </a>
@@ -881,7 +935,7 @@ function Contact() {
                 <span className="relative inline-flex h-3 w-3 rounded-full bg-primary" />
               </span>
               <span className="type-body-sm font-semibold text-ink">
-                Live Chat Advisor Available Now (Average wait &lt; 2 mins)
+                Advisors typically reply during Gulf evenings
               </span>
             </div>
           </div>

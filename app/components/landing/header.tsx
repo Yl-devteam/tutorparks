@@ -17,7 +17,7 @@ export function LandingHeader() {
             href="#demo-booking"
             className="font-sans text-sm font-semibold text-primary"
           >
-            Free Demo
+            Free Trial
           </a>
           <a
             href="#contact-advisors"
@@ -34,7 +34,7 @@ export function LandingHeader() {
           </a>
         </nav>
         <a className="btn-primary whitespace-nowrap" href="#demo-booking">
-          Book 30-Min Free Demo
+          Book a free trial class
         </a>
       </div>
     </header>

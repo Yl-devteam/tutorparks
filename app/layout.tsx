@@ -17,7 +17,8 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "TutorParks",
-  description: "K–12 online tutoring with a warm academic studio identity.",
+  description:
+    "Live 1:1 K-12 tutoring across UAE, Saudi Arabia, Qatar, Kuwait, and Oman. Maths, English, Science, languages, and exam prep. Book a free trial class.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

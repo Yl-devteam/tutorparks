@@ -51,7 +51,7 @@ export function ContactForm() {
         </label>
         <input
           className="field-input"
-          placeholder="e.g. 8th Grade Math, preparing for Algebra Regents"
+          placeholder="e.g. Grade 8 Maths, CBSE exam prep"
           required
           type="text"
         />

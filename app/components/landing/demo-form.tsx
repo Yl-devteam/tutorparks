@@ -18,12 +18,11 @@ export function DemoForm() {
           <Icon name="check_circle" className="text-[36px]" />
         </div>
         <h3 className="font-sans text-2xl font-bold text-ink">
-          Demo Class Reserved!
+          Free trial reserved
         </h3>
         <p className="mx-auto max-w-md type-body-sm text-ink-subtle">
-          We’ve sent the calendar invite, tutor profile, and digital classroom
-          link to your email. An Academic Coordinator will text you brief
-          confirmation instructions shortly.
+          We&apos;ve sent the class details to your email. An advisor will
+          confirm the slot and tutor shortly.
         </p>
         <div className="pt-4">
           <button
@@ -31,7 +30,7 @@ export function DemoForm() {
             className="btn-outline type-label-sm"
             onClick={() => setSubmitted(false)}
           >
-            Book Another Student
+            Book another student
           </button>
         </div>
       </div>
@@ -42,28 +41,29 @@ export function DemoForm() {
     <form className="space-y-6" onSubmit={handleSubmit}>
       <div>
         <label className="mb-2 block type-label-lg text-ink">
-          Child&apos;s Current Grade <span className="text-error">*</span>
+          Child&apos;s current grade <span className="text-error">*</span>
         </label>
         <select className="field-input" required defaultValue="">
           <option disabled value="">
-            Select grade bracket...
+            Select grade band...
           </option>
-          <option value="k-2">Grades K - 2 (Early Foundations)</option>
-          <option value="3-5">Grades 3 - 5 (Elementary Mastery)</option>
-          <option value="6-8">Grades 6 - 8 (Middle School Pre-High)</option>
-          <option value="9-12">Grades 9 - 12 (High School / Honors / AP)</option>
+          <option value="k-5">Grades K – 5 (Primary)</option>
+          <option value="6-8">Grades 6 – 8 (Middle)</option>
+          <option value="9-12">Grades 9 – 12 (Secondary)</option>
         </select>
       </div>
       <div>
         <label className="mb-2 block type-label-lg text-ink">
-          Primary Focus Subject <span className="text-error">*</span>
+          Primary focus subject <span className="text-error">*</span>
         </label>
-        <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3">
           {[
-            { value: "math", label: "Math", defaultChecked: true },
+            { value: "maths", label: "Maths", defaultChecked: true },
             { value: "english", label: "English" },
             { value: "science", label: "Science" },
-            { value: "multiple", label: "Multiple" },
+            { value: "languages", label: "Languages" },
+            { value: "evs", label: "EVS / Social" },
+            { value: "exam", label: "Exam prep" },
           ].map((subject) => (
             <label key={subject.value} className="cursor-pointer">
               <input
@@ -84,22 +84,22 @@ export function DemoForm() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label className="mb-2 block type-label-lg text-ink">
-            Parent / Guardian Name <span className="text-error">*</span>
+            Parent / guardian name <span className="text-error">*</span>
           </label>
           <input
             className="field-input"
-            placeholder="e.g. Jessica Miller"
+            placeholder="e.g. Fatima Al-Hassan"
             required
             type="text"
           />
         </div>
         <div>
           <label className="mb-2 block type-label-lg text-ink">
-            Parent Email Address <span className="text-error">*</span>
+            Parent email address <span className="text-error">*</span>
           </label>
           <input
             className="field-input"
-            placeholder="jessica@example.com"
+            placeholder="parent@example.com"
             required
             type="email"
           />
@@ -108,30 +108,32 @@ export function DemoForm() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label className="mb-2 block type-label-lg text-ink">
-            Phone (For SMS reminder) <span className="text-error">*</span>
+            Mobile (with country code) <span className="text-error">*</span>
           </label>
           <input
             className="field-input"
-            placeholder="(555) 000-0000"
+            placeholder="+971, +966, +974, +965, or +968"
             required
             type="tel"
           />
         </div>
         <div>
           <label className="mb-2 block type-label-lg text-ink">
-            Preferred Demo Window <span className="text-error">*</span>
+            Preferred trial window <span className="text-error">*</span>
           </label>
           <select className="field-input" required defaultValue="today">
-            <option value="today">Today Afternoon (4PM - 7PM EST)</option>
-            <option value="tomorrow-eve">Tomorrow Evening (5PM - 8PM EST)</option>
-            <option value="saturday">This Saturday (Morning / Midday)</option>
-            <option value="sunday">This Sunday (Afternoon)</option>
+            <option value="today">Today evening (4PM – 7PM Gulf time)</option>
+            <option value="tomorrow-eve">
+              Tomorrow evening (5PM – 8PM Gulf time)
+            </option>
+            <option value="friday">This Friday (evening / weekend)</option>
+            <option value="saturday">This Saturday (morning / midday)</option>
             <option value="custom">Contact me to customize timing</option>
           </select>
         </div>
       </div>
       <button className="btn-primary w-full cursor-pointer" type="submit">
-        <span>Confirm Free 30-Min Demo Session</span>
+        <span>Confirm free trial class</span>
         <Icon name="verified" className="ml-2 text-[18px]" />
       </button>
       <p className="text-center type-body-sm text-ink-subtle">
