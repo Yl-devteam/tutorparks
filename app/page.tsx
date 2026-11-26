@@ -78,7 +78,7 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="relative mt-6 lg:col-span-5 lg:mt-0">
+          <div className="relative hidden lg:col-span-5 lg:mt-0 lg:block">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="relative h-[520px] overflow-hidden rounded-xl border-4 border-canvas bg-canvas-inset shadow-float">
                 <Image
@@ -457,7 +457,7 @@ function DemoBooking() {
   return (
     <section className="w-full scroll-mt-20 bg-canvas py-20" id="demo-booking">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="grid grid-cols-1 items-center gap-12 rounded-xl border border-border-card bg-canvas-raised p-8 shadow-card lg:grid-cols-12 lg:p-14">
+        <div className="grid grid-cols-1 items-center gap-12 p-0 lg:grid-cols-12 lg:rounded-xl lg:border lg:border-border-card lg:bg-canvas-raised lg:p-14 lg:shadow-card">
           <div className="flex flex-col lg:col-span-5">
             <span className="mb-4 self-start rounded border border-chip-ochre-fg/30 bg-chip-ochre px-3 py-1 type-label-sm text-chip-ochre-fg">
               Zero-Risk Trial
@@ -507,7 +507,7 @@ function DemoBooking() {
               </div>
             </div>
           </div>
-          <div className="rounded-lg border border-border/70 bg-canvas-inset p-6 shadow-sm lg:col-span-7 lg:p-10">
+          <div className="p-0 lg:col-span-7 lg:rounded-lg lg:border lg:border-border/70 lg:bg-canvas-inset lg:p-10 lg:shadow-sm">
             <DemoForm />
           </div>
         </div>
@@ -711,7 +711,7 @@ function TeachWithUs() {
               </div>
             ))}
           </div>
-          <div className="rounded-xl border border-border-card bg-canvas p-8 shadow-card lg:col-span-7 lg:p-10">
+          <div className="p-0 lg:col-span-7 lg:rounded-xl lg:border lg:border-border-card lg:bg-canvas lg:p-10 lg:shadow-card">
             <div className="mb-6">
               <span className="rounded border border-chip-ochre-fg/30 bg-chip-ochre px-3 py-1 type-label-sm text-chip-ochre-fg">
                 Fast-Track Application
@@ -798,7 +798,7 @@ function Contact() {
       id="contact-advisors"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="grid grid-cols-1 gap-12 rounded-xl border border-border-card bg-canvas p-8 shadow-card lg:grid-cols-12 lg:p-14">
+        <div className="grid grid-cols-1 gap-12 p-0 lg:grid-cols-12 lg:rounded-xl lg:border lg:border-border-card lg:bg-canvas lg:p-14 lg:shadow-card">
           <div className="flex flex-col justify-between lg:col-span-6">
             <div>
               <span className="rounded bg-canvas-inset px-3 py-1 type-label-sm font-bold tracking-wider text-primary uppercase">
@@ -857,7 +857,7 @@ function Contact() {
               </span>
             </div>
           </div>
-          <div className="rounded-lg border border-border/60 bg-canvas-raised p-6 lg:col-span-6 lg:p-8">
+          <div className="p-0 lg:col-span-6 lg:rounded-lg lg:border lg:border-border/60 lg:bg-canvas-raised lg:p-8">
             <h3 className="mb-2 font-sans text-xl font-bold text-ink">
               Send a Quick Message
             </h3>
