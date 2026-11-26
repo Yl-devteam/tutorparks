@@ -271,6 +271,24 @@
   }
 }
 
+@utility field-input {
+  width: 100%;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  line-height: var(--text-body-sm--line-height);
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-focus);
+  }
+}
+
 @utility surface-card {
   background-color: var(--color-canvas-raised);
   border: 1px solid var(--color-border-card);

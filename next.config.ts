@@ -4,6 +4,15 @@ const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+        pathname: "/aida-public/**",
+      },
+    ],
+  },
   turbopack: {
     rules: {
       "*.css": {
