@@ -1,3 +1,4 @@
+import { BrandName } from "./brand-name";
 import { Icon } from "./icon";
 
 export function LandingHeader() {
@@ -8,9 +9,10 @@ export function LandingHeader() {
           <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-secondary shadow-sm">
             <Icon name="local_library" filled className="text-[20px]" />
           </div>
-          <span className="hidden font-sans text-xl font-bold tracking-tight text-ink sm:inline">
-            TutorParks
-          </span>
+          <BrandName
+            className="hidden font-sans text-xl font-bold tracking-tight sm:inline"
+            tutorClassName="text-ink"
+          />
         </a>
         <nav className="hidden items-center gap-8 lg:flex">
           <a

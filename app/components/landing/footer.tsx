@@ -1,4 +1,5 @@
 import { cacheLife } from "next/cache";
+import { BrandName } from "./brand-name";
 import { Icon } from "./icon";
 
 const INSTAGRAM_URL =
@@ -44,9 +45,10 @@ export async function LandingFooter() {
               <div className="flex h-8 w-8 items-center justify-center rounded bg-primary text-secondary">
                 <Icon name="local_library" filled className="text-[18px]" />
               </div>
-              <span className="font-sans text-xl font-bold tracking-tight text-on-primary">
-                TutorParks
-              </span>
+              <BrandName
+                className="font-sans text-xl font-bold tracking-tight"
+                tutorClassName="text-on-primary"
+              />
             </div>
             <p className="type-body-sm leading-relaxed text-on-primary/70">
               Live 1:1 online classes for K-12 in Maths, English, Science, and
