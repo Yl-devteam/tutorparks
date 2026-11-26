@@ -6,9 +6,6 @@ import { LandingHeader } from "./components/landing/header";
 import { Icon } from "./components/landing/icon";
 import { TeacherForm } from "./components/landing/teacher-form";
 
-const HERO_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuA4xzEe6Wl4Iv3KoRpNw-1Xs3IS83t15363LNmZIkA0RrWwACsqFjzx7cGbjEIvpWIaMSl3NTHLuLKWCETqA6ZtOB8VMSxRhw6ETyYDPtIn-7QlsxbgCQFnDZlG2DVhfO8xwQyWKh--slTx6YrpuqK4VzUpwoOZiezPCa8dbP695RzwCWeaM9J4JzBXoNOj6cU0G4H2UGsvRDxAEas1Js0SRL4MFVwBT2jvpLWZT8E";
-
 export default function Home() {
   return (
     <>
@@ -37,23 +34,6 @@ function Hero() {
       <div className="pointer-events-none absolute -top-24 right-1/4 -z-0 h-96 w-96 rounded-full bg-chip-ochre/50 blur-3xl" />
       <div className="pointer-events-none absolute top-1/3 -left-20 -z-0 h-80 w-80 rounded-full bg-chip-emerald/30 blur-3xl" />
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-8 lg:px-12">
-        <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-border/80 bg-canvas px-4 py-2 type-body-sm font-medium text-ink shadow-sm">
-          <div className="flex items-center text-secondary">
-            <Icon name="star" filled className="text-[16px]" />
-            <Icon name="star" filled className="text-[16px]" />
-            <Icon name="star" filled className="text-[16px]" />
-            <Icon name="star" filled className="text-[16px]" />
-            <Icon name="star" filled className="text-[16px]" />
-          </div>
-          <span className="font-bold text-ink">4.9/5 Rating</span>
-          <span className="text-rule">•</span>
-          <span className="text-ink-subtle">3,200+ Verified Parents</span>
-          <span className="text-rule">•</span>
-          <span className="inline-flex items-center gap-1 font-semibold text-primary">
-            <Icon name="verified" className="text-[15px]" />
-            Certified US Educators
-          </span>
-        </div>
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="flex flex-col items-start pr-0 lg:col-span-7 lg:pr-6">
             <h1 className="max-w-2xl font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-6xl leading-[1.15]">
@@ -93,10 +73,6 @@ function Hero() {
                 <span>100% Vetted Teachers</span>
               </div>
               <div className="flex items-center gap-2 rounded border border-border/80 bg-canvas px-3.5 py-1.5 type-label-sm text-ink-subtle shadow-sm">
-                <Icon name="tune" className="text-[16px] text-tertiary" />
-                <span>Custom Learning Plans</span>
-              </div>
-              <div className="flex items-center gap-2 rounded border border-border/80 bg-canvas px-3.5 py-1.5 type-label-sm text-ink-subtle shadow-sm">
                 <Icon name="calendar_clock" className="text-[16px] text-secondary" />
                 <span>Flexible Scheduling</span>
               </div>
@@ -106,8 +82,8 @@ function Hero() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="relative h-[520px] overflow-hidden rounded-xl border-4 border-canvas bg-canvas-inset shadow-float">
                 <Image
-                  src={HERO_IMAGE}
-                  alt="Happy high school girl student with headphones studying math and science on her laptop at a clean wooden desk by a sunlit window with notebooks, highlighters, and books on shelves in a warm academic home setting"
+                  src="/images/hero-student.jpg"
+                  alt="Teen student in a green hoodie and headphones at a sunlit desk, writing geometry notes while a laptop shows a triangle lesson"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 40vw"
@@ -155,7 +131,7 @@ function Metrics() {
   return (
     <section className="w-full border-y border-rule/70 bg-canvas-raised py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           <div className="flex flex-col items-center p-4 md:items-start">
             <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-chip-emerald text-primary">
               <Icon name="event_available" className="text-[26px]" />
@@ -199,20 +175,6 @@ function Metrics() {
             </p>
             <p className="type-body-sm text-ink-subtle">
               Times that fit the family week.
-            </p>
-          </div>
-          <div className="flex flex-col items-center p-4 md:items-start">
-            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-error-container text-tertiary">
-              <Icon name="tune" className="text-[26px]" />
-            </div>
-            <p className="font-display text-2xl font-semibold text-ink lg:text-3xl">
-              Custom
-            </p>
-            <p className="mt-1 font-sans text-base font-bold text-ink">
-              Learning Plans
-            </p>
-            <p className="type-body-sm text-ink-subtle">
-              Curriculum matched to school standards.
             </p>
           </div>
         </div>
