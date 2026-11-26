@@ -101,24 +101,6 @@ function Hero() {
                 <span>Flexible Scheduling</span>
               </div>
             </div>
-            <div className="mt-8 flex w-full max-w-lg items-center justify-between rounded-lg border border-border bg-canvas p-4 shadow-sm">
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded bg-canvas-raised text-primary">
-                  <Icon name="trending_up" className="text-[22px]" />
-                </div>
-                <div>
-                  <p className="font-sans type-label-lg leading-tight text-ink">
-                    State &amp; AP Standards Aligned
-                  </p>
-                  <p className="type-body-sm text-ink-subtle">
-                    Common Core, NGSS, IB, and College Board
-                  </p>
-                </div>
-              </div>
-              <span className="rounded border border-chip-ochre-fg/30 bg-chip-ochre px-2.5 py-1 type-label-sm text-chip-ochre-fg">
-                2025 Ready
-              </span>
-            </div>
           </div>
           <div className="relative mt-6 lg:col-span-5 lg:mt-0">
             <div className="relative mx-auto max-w-md lg:max-w-none">
@@ -131,52 +113,35 @@ function Hero() {
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
-                <div className="absolute right-5 bottom-5 left-5 flex items-center justify-between rounded-lg border border-border/60 bg-canvas/95 p-3.5 shadow-card backdrop-blur-md">
-                  <div className="flex items-center gap-3">
-                    <div className="relative">
-                      <div className="h-3 w-3 rounded-full bg-primary" />
-                      <div className="absolute inset-0 h-3 w-3 animate-ping rounded-full bg-primary opacity-75" />
-                    </div>
-                    <div>
-                      <p className="type-label-lg text-ink">Live 1-on-1 Session</p>
-                      <p className="type-body-sm text-ink-subtle">
-                        Algebra II • Graphing Polynomials
-                      </p>
-                    </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
+              </div>
+              <div className="mt-4 flex flex-col gap-3 lg:mt-0">
+                <div className="surface-card flex items-start gap-3 p-space-md lg:absolute lg:-top-4 lg:-left-4 lg:max-w-[240px]">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-chip-emerald text-primary">
+                    <Icon name="person_check" className="text-[22px]" />
                   </div>
-                  <div className="rounded bg-primary px-2.5 py-1 type-label-sm text-on-primary">
-                    Active Room
+                  <div>
+                    <p className="font-sans type-label-lg text-ink">
+                      1-on-1 Dedicated Classes
+                    </p>
+                    <p className="mt-1 type-body-sm leading-tight text-ink-subtle">
+                      Matched to your child&apos;s learning style.
+                    </p>
                   </div>
                 </div>
-              </div>
-              <div className="absolute -top-5 -left-6 flex -rotate-1 items-center gap-3.5 rounded-lg border border-border/70 bg-canvas p-3.5 shadow-card transition-transform hover:rotate-0">
-                <div className="flex h-11 w-11 items-center justify-center rounded bg-chip-ochre font-bold text-chip-ochre-fg">
-                  <Icon name="grade" className="text-[24px]" />
+                <div className="surface-card flex items-start gap-3 p-space-md lg:absolute lg:right-0 lg:-bottom-4 lg:max-w-[240px]">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-chip-ochre text-chip-ochre-fg">
+                    <Icon name="calendar_clock" className="text-[22px]" />
+                  </div>
+                  <div>
+                    <p className="font-sans type-label-lg text-ink">
+                      Flexible Scheduling
+                    </p>
+                    <p className="mt-1 type-body-sm leading-tight text-ink-subtle">
+                      Sessions that fit the family calendar.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-sans text-2xl font-extrabold leading-none text-ink">
-                    98%
-                  </p>
-                  <p className="mt-1 type-body-sm font-medium text-ink-subtle">
-                    Grade Improvement
-                  </p>
-                </div>
-              </div>
-              <div className="absolute top-1/2 -right-8 flex max-w-[190px] rotate-2 flex-col gap-1.5 rounded-lg border border-border/70 bg-canvas p-4 shadow-card transition-transform hover:rotate-0">
-                <div className="flex items-center gap-2">
-                  <Icon name="person_check" className="text-[20px] text-primary" />
-                  <span className="type-label-sm text-ink">1-on-1 Dedicated</span>
-                </div>
-                <p className="type-body-sm leading-tight text-ink-subtle">
-                  Matched to your child&apos;s specific learning temperament.
-                </p>
-              </div>
-              <div className="absolute -bottom-6 left-8 flex items-center gap-2.5 rounded-lg border border-border/70 bg-canvas px-4 py-2.5 shadow-card">
-                <Icon name="draw" className="text-[20px] text-tertiary" />
-                <span className="type-label-sm text-ink">
-                  Interactive Whiteboard &amp; Labs
-                </span>
               </div>
             </div>
           </div>
@@ -192,47 +157,9 @@ function Metrics() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="flex flex-col items-center p-4 md:items-start">
-            <div className="flex items-baseline gap-1">
-              <span className="font-display text-4xl font-bold text-primary lg:text-5xl">
-                15k
-              </span>
-              <span className="text-2xl font-bold text-secondary">+</span>
+            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-chip-emerald text-primary">
+              <Icon name="event_available" className="text-[26px]" />
             </div>
-            <p className="mt-1 font-sans text-base font-bold text-ink">
-              Active Students
-            </p>
-            <p className="type-body-sm text-ink-subtle">
-              Across US &amp; Canadian school districts
-            </p>
-          </div>
-          <div className="flex flex-col items-center p-4 md:items-start">
-            <div className="flex items-baseline gap-1">
-              <span className="font-display text-4xl font-bold text-secondary lg:text-5xl">
-                98%
-              </span>
-            </div>
-            <p className="mt-1 font-sans text-base font-bold text-ink">
-              Better Grades
-            </p>
-            <p className="type-body-sm text-ink-subtle">
-              Reported within first 60 days of classes
-            </p>
-          </div>
-          <div className="flex flex-col items-center p-4 md:items-start">
-            <div className="flex items-baseline gap-1">
-              <span className="font-display text-4xl font-bold text-primary lg:text-5xl">
-                500
-              </span>
-              <span className="text-2xl font-bold text-tertiary">+</span>
-            </div>
-            <p className="mt-1 font-sans text-base font-bold text-ink">
-              Certified Specialists
-            </p>
-            <p className="type-body-sm text-ink-subtle">
-              Top 3% applicant acceptance rate
-            </p>
-          </div>
-          <div className="flex flex-col items-center p-4 md:items-start">
             <div className="flex items-baseline gap-1">
               <span className="font-display text-4xl font-bold text-primary lg:text-5xl">
                 30
@@ -243,7 +170,49 @@ function Metrics() {
               Free Demo Session
             </p>
             <p className="type-body-sm text-ink-subtle">
-              Comprehensive baseline skill report
+              No credit card. Baseline skill report included.
+            </p>
+          </div>
+          <div className="flex flex-col items-center p-4 md:items-start">
+            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-chip-emerald text-primary">
+              <Icon name="person_check" className="text-[26px]" />
+            </div>
+            <p className="font-display text-2xl font-semibold text-ink lg:text-3xl">
+              1-on-1
+            </p>
+            <p className="mt-1 font-sans text-base font-bold text-ink">
+              Dedicated Classes
+            </p>
+            <p className="type-body-sm text-ink-subtle">
+              Live sessions with one matched mentor.
+            </p>
+          </div>
+          <div className="flex flex-col items-center p-4 md:items-start">
+            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-chip-ochre text-chip-ochre-fg">
+              <Icon name="calendar_clock" className="text-[26px]" />
+            </div>
+            <p className="font-display text-2xl font-semibold text-ink lg:text-3xl">
+              Flexible
+            </p>
+            <p className="mt-1 font-sans text-base font-bold text-ink">
+              Scheduling
+            </p>
+            <p className="type-body-sm text-ink-subtle">
+              Times that fit the family week.
+            </p>
+          </div>
+          <div className="flex flex-col items-center p-4 md:items-start">
+            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-error-container text-tertiary">
+              <Icon name="tune" className="text-[26px]" />
+            </div>
+            <p className="font-display text-2xl font-semibold text-ink lg:text-3xl">
+              Custom
+            </p>
+            <p className="mt-1 font-sans text-base font-bold text-ink">
+              Learning Plans
+            </p>
+            <p className="type-body-sm text-ink-subtle">
+              Curriculum matched to school standards.
             </p>
           </div>
         </div>
